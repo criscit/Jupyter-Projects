@@ -1,0 +1,13 @@
+cd "C:\Users\crisc\Desktop\MyProgs\Jupyter Projects"
+
+conda env create --prefix ./env -f ./environment.yml
+
+conda activate "C:\Users\crisc\Desktop\MyProgs\Jupyter Projects\env"
+
+conda install -c conda-forge jupyter_contrib_nbextensions
+
+jupyter contrib nbextension install --user
+
+jupyter nbextension enable hide_input_all/main
+
+jupyter nbextension enable collapsible_headings/main
